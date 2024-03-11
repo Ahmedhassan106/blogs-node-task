@@ -1,0 +1,7 @@
+body{
+    background-color: red;
+}
+
+p, h1, h2, h3, a, ul{
+    color: white !important;
+}

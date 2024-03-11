@@ -1,0 +1,30 @@
+<html>
+    <%- include('../partials/head.ejs') %>
+    <body>
+        <nav>
+            <div class="site-title">
+                <a href="/"><h1>New Blogyyy</h1></a>
+                <p>my practice site</p>
+            </div>
+            <ul>
+                <li><a href="/">Blogs</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/blogs/create">New Blog</a></li>
+            </ul>
+        </nav>
+
+        <div class="create-blog content">
+            <form action="/blogs" method="POST">
+                <label for="title">blog title : </label>
+                <input type="text" id="title" name="title" required>
+                <label for="snippet">blog snippet : </label>
+                <input type="text" id="snippet" name="snippet" required>
+                <label for="body">blog body : </label>
+                <textarea id="body" cols="30" rows="10" name="body" required></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+
+        <%- include('../partials/footer.ejs') %>
+    </body>
+</html>
